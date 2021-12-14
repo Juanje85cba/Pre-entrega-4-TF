@@ -1,0 +1,56 @@
+/***********Footer**************/
+
+@each $icono in 
+facebook, twitter, instagram, telefono, whatsapp {
+    .#{$icono}Icon {
+        background-image:url(../multimedia/img/#{$icono}.png);
+        width: 4em;
+        height: 4em;
+        background-size: 100%;
+        list-style: none;
+    }
+}
+
+footer {
+    background-color: rgba(250, 235, 215, 0.3);
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    div {
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+}
+
+
+.logo {
+    width: 40rem;
+}
+
+.icon {
+    width: 4rem;
+    display: inline-block;
+}
+
+.whatsapp {
+    width: 3rem;
+}
+
+.logoFooter {
+    width: 25rem;
+}
+
+/*****************************************/

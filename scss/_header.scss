@@ -1,0 +1,33 @@
+header {
+    background-color: rgba(250, 235, 215, 0.3);
+    box-sizing: border-box;
+    div {
+        div {
+            a {
+                img {
+                    padding: 50px 30px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        color: rgb(32, 32, 32);
+        font-size: 5em;
+        font-weight: bold;
+        text-align: center;
+        margin: 4px 5px 4px 5px;
+        padding: 2px 5px 2px 5px;
+        font-family: 'Garamond', Times New Roman, sans-serif;
+    }
+
+    h2 {
+        color: rgb(16, 77, 156);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin: 4px 5px 4px 5px;
+        padding: 2px 5px 2px 5px;
+    }
+}

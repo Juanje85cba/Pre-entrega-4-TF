@@ -1,0 +1,8 @@
+User-Agent: *
+
+User-Agent: Googlebot-Image
+Disallow: /multimedia
+Disallow: /node_modules
+
+User-Agent: Googlebot
+Disallow: /pedidos.html

@@ -1,0 +1,27 @@
+1- DESCARGAR E INSTALAR NodeJs ------ https://nodejs.org/es/
+2- CMD ---- npm -v  ---- node -v
+3- CMD ---- (cd) change directory a mi proyecto
+4- CMD ---- npm init
+5- CMD ---- npm install -D node-sass nodemon
+6- EDITOR---- Abrir package.json
+7- EDITOR---- Agregar los sgt comandos donde estan los scripts --- 
+		"build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+8- CMD ---- npm run build-css
+<<<<<<< HEAD
+9- CMD ---- npm run watch-css
+=======
+9- CMD --- npm install bootstrap
+
+En tu scss - último import
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+Link purge css
+https://purgecss.com/CLI.html#installation
+
+1- CMD ---- npm i -g purgecss
+2- EDITOR-- script en package.json
+	"build":"purgecss --css css/main.css --content index.html -o css/reducido.css"
+4- CMD --- npm run build
+>>>>>>> 6b47519c1cb44971ce92c6d6d86d42590f08744e

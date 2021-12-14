@@ -1,0 +1,337 @@
+/****Selector Universal****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Reset de Medida*/
+/*1em = 10px*/
+
+html {
+    font-size: 62.5%;
+}
+
+/*********Paleta de colores***********/
+
+$darck: rgb(56, 56, 56);
+
+$lightBlue : rgb(16, 77, 156);
+
+$brown: rgb(191, 101, 69);
+
+/****colores menu****/
+
+$red: rgb(192, 41, 41);
+
+$green: rgb(5, 155, 5);
+
+$darkblue: rgb(3, 65, 119);
+
+$grey: rgb(204, 209, 216);
+
+$buttonGad:rgb(83, 141, 190);
+
+$buttonWhite: rgb(238, 235, 235);
+
+/************************************/
+
+$widthForm: 10vw;
+
+$widthMediaPed: 100vw;
+
+$widthText:20vw;
+
+/********************/
+/******nosotros******/
+
+.containerNos{
+    width: ($widthText * 5) - 5vw;
+    text-align: center;
+    justify-items: center;
+    box-sizing: border-box;
+    }
+
+/********************/
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 60vh 85vh 40vh;
+}
+
+#hText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: hText;
+}
+
+/************************************/
+
+body {
+    background-image: url(../multimedia/img/food.png);
+    margin: 4px 5px 4px 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+/*************FLEXBOX*************/
+.containerFlex {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+/************************************/
+/*id*/
+#imagenEmpanadas {
+    width: 98vw;
+}
+/*Botonera*/
+.boton{
+    color: rgb(204, 209, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    background-color: rgb(16, 77, 156);
+    text-decoration: none;
+    border: 3px solid, rgb(3, 65, 119);
+    border-radius: 27px;
+    margin: 4px 2px;
+    padding: 5px 17px;
+}
+
+.botonHover:hover {
+    color: rgb(204, 209, 216);
+    transform: translateY(2px);
+    border-bottom: 2px;
+    background-image: linear-gradient(to bottom, rgb(83, 141, 190), rgb(16, 77, 156));
+}
+
+
+/*****************************/
+
+
+
+#botonPedido {
+    color: rgb(204, 209, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    background-color: $lightBlue;
+    text-decoration: none;
+    border: 3px solid, $darkblue;
+    border-radius: 27px;
+    margin: 4px 2px;
+    padding: 5px 17px;
+}
+
+
+
+.botonPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#buttonEnviar {
+    color: rgb(238, 235, 235);
+    font-size: 2em;
+    background-color: rgb(42, 155, 60);
+    border-radius: 7px;
+    padding: 0.2em 0.8em;
+}
+
+#buttonCancel {
+    color: rgb(238, 235, 235);
+    font-size: 2em;
+    background-color: rgb(182, 46, 46);
+    border-radius: 7px;
+    padding: 0.2em 0.8em;
+}
+
+#buttonPrecios {
+    color: rgb(204, 209, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    background-color: rgb(16, 77, 156);
+    text-decoration: none;
+    border: 3px solid, rgb(3, 65, 119);
+    border-radius: 27px;
+    margin: 4px 2px;
+    padding: 5px 17px;
+}
+
+.botonPrecios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.redes {
+    color: rgb(191, 101, 69);
+    padding: 10px;
+}
+
+/***************** Tablas *********************/
+
+#tablaText {
+    color: rgb(191, 101, 69);
+    background-color: rgb(204, 209, 216);
+    font-weight: bolder;
+    justify-content: center;
+}
+
+/**********************************************/
+
+/*Main*/
+
+main {
+    display: grid;
+    h2 {
+        color: rgb(16, 77, 156);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        li {
+            color: rgb(35, 103, 192);
+            font-family: Garamond, Times New Roman, sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 4px 5px 4px 5px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+    section {
+        display: grid;
+        justify-content: center;
+        form {
+            justify-items: center;            
+            legend {
+                padding: 5px;
+                color: rgb(191, 101, 69);
+                font-weight: bolder;
+                justify-content: center;
+                font-size: 2em;
+            }
+            label {
+                padding: 7px;
+                color: rgb(56, 56, 56);
+                font-size: 1.8em;
+            }
+            select{
+                background-color: rgb(204, 209, 216);
+                font-size: 1.5em;
+                padding: 3px;
+                border-radius: 5px;
+            }
+            input{
+                background-color: rgb(204, 209, 216);
+                font-size: 1.5em;
+                padding: 3px;
+                border-radius: 5px;  
+            }
+            textarea{
+                background-color: rgb(204, 209, 216);
+                padding: 5px;
+                font-size: 1.8em;
+                width:60% ;
+                border-radius: 5px;
+            }
+        }
+        table {
+            font-size: 1.8em;
+            padding: 20px;
+            tr {
+                padding: 10px 5px;
+                td {
+                    padding: 10px;
+                }
+                th {
+                    padding: 10px;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+/**********************************************/
+
+/*Gradiantes*/
+.transformButtonPrecios:hover {
+    transform: rotateX(360deg);
+    cursor: pointer;
+    transition: transform 1s;
+    background-image: linear-gradient(to bottom, rgb(83, 141, 190), rgb(16, 77, 156));
+}
+
+/*mis animaciones*/
+.hoverBottonPedido:hover {
+    transform: translateY(2px);
+    border-bottom: 2px;
+    background-image: linear-gradient(to bottom, rgb(83, 141, 190), rgb(16, 77, 156));
+}
+
+/**********************************************/
+
+/***************breakpoint*********************/
+@media (max-width: 775.98px) {
+    main article{
+        
+        display: none;
+    }
+}
+@media (max-width: 823px) {
+    nav{
+        
+        div{
+            ul {
+                
+                li{
+                    a{font-size: 1.8rem;
+                    }
+                }
+            }
+        } 
+        
+    }
+}
+
+@media (max-width: 991.98px) { 
+    header{
+        div{
+            div{
+                div{
+                    h1{
+                        display: none;
+                    }
+                    h2{
+                        display: none;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+@media (max-width: 1199.98px) {  }
+
+/**********************************************/
+/*ERROR 404*/
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+/***********/
