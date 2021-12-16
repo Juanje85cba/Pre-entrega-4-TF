@@ -1,0 +1,17 @@
+/* contenedores */
+.sectionPedidos{
+    display: flex ;
+    justify-content: center;
+}
+
+.formPedido{
+    width: $widthForm *10;
+    padding: 30px;
+}
+
+.mediaPedido {
+    width: $widthMediaPed / 1.1;
+    padding: 30px;
+
+}
+
